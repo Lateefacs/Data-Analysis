@@ -1,0 +1,2043 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' inline='true' name='federated.1glkvn20q1wc6u13z4z5517lnyug' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hospital_emergency_artificial_data_datetime' name='excel-direct.1va6tcs0b34qls14bm4qs1umxnau'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/lateefamac/Downloads/hospital_emergency_artificial_data_datetime.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1va6tcs0b34qls14bm4qs1umxnau' name='Hospital Emergency Data' table='[&apos;Hospital Emergency Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:E201:no:A1:E201:0' header='yes' outcome='6'>
+            <column datatype='datetime' name='Reception Time' ordinal='0' />
+            <column datatype='datetime' name='Enter Time' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='Age' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1va6tcs0b34qls14bm4qs1umxnau' name='Hospital Emergency Data' table='[&apos;Hospital Emergency Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:E201:no:A1:E201:0' header='yes' outcome='6'>
+            <column datatype='datetime' name='Reception Time' ordinal='0' />
+            <column datatype='datetime' name='Enter Time' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='Age' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hospital Emergency Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E201:no:A1:E201:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reception Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Reception Time]</local-name>
+            <parent-name>[Hospital Emergency Data]</parent-name>
+            <remote-alias>Reception Time</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Enter Time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Enter Time]</local-name>
+            <parent-name>[Hospital Emergency Data]</parent-name>
+            <remote-alias>Enter Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Hospital Emergency Data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Hospital Emergency Data]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Hospital Emergency Data]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1glkvn20q1wc6u13z4z5517lnyug].[cnt:Calculation_465981857874632706:qk]&quot;' value='Visits' />
+          <alias key='&quot;[federated.1glkvn20q1wc6u13z4z5517lnyug].[pcto:cnt:Calculation_465981857874632706:qk:3]&quot;' value='Percentage %' />
+        </aliases>
+      </column>
+      <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+      </column>
+      <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+        <aliases>
+          <alias key='&quot;less&quot;' value='less than 2h' />
+          <alias key='&quot;more&quot;' value='more than 2h' />
+        </aliases>
+      </column>
+      <column caption='No. of records' datatype='integer' name='[Calculation_508977160679198721]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Gender])' />
+      </column>
+      <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hospital Emergency Data1' datatype='table' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_465981857874632706]' derivation='Count' name='[cnt:Calculation_465981857874632706:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_45598979323105280]' derivation='None' name='[none:Calculation_45598979323105280:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_465981857874632706]' derivation='None' name='[none:Calculation_465981857874632706:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_465981857874632706]' derivation='Count' name='[pcto:cnt:Calculation_465981857874632706:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_465981857874632706:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Age Class)' hidden='true' name='[Action (Age Class)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_45598979323105280]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Gender)' hidden='true' name='[Action (Gender)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Gender]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date)) 1' hidden='true' name='[Action (MONTH(Date)) 1]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date))' hidden='true' name='[Action (MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (less/more 2h)' hidden='true' name='[Action (less/more 2h)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_465981857874632706]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/2c/q0wg8cl90095hyfqml8lbxnh0000gn/T/tableau-temp/#TableauTemp_11yr0yt1idls0510x0yod12vdstg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/31/2026 08:16:49 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Reception Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Reception Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reception Time</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Hospital Emergency Data</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Enter Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Enter Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Enter Time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Hospital Emergency Data</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Hospital Emergency Data</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Hospital Emergency Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Hospital Emergency Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#da323f'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#feb4a6'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_45598979323105280:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot; 81 - 90&quot;</bucket>
+            </map>
+            <map to='#c11a3b'>
+              <bucket>&quot; 71 - 80&quot;</bucket>
+            </map>
+            <map to='#d3293d'>
+              <bucket>&quot; 61 - 70&quot;</bucket>
+            </map>
+            <map to='#e13b42'>
+              <bucket>&quot; 51 - 60&quot;</bucket>
+            </map>
+            <map to='#f05c4d'>
+              <bucket>&quot; 41 - 50&quot;</bucket>
+            </map>
+            <map to='#f36754'>
+              <bucket>&quot; 31 - 40&quot;</bucket>
+            </map>
+            <map to='#f9856e'>
+              <bucket>&quot; 21 - 30&quot;</bucket>
+            </map>
+            <map to='#fb9984'>
+              <bucket>&quot; 11 - 20&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;0 - 10&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Hospital Emergency Data1' id='Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692'>
+            <properties context=''>
+              <relation connection='excel-direct.1va6tcs0b34qls14bm4qs1umxnau' name='Hospital Emergency Data' table='[&apos;Hospital Emergency Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:E201:no:A1:E201:0' header='yes' outcome='6'>
+                  <column datatype='datetime' name='Reception Time' ordinal='0' />
+                  <column datatype='datetime' name='Enter Time' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='integer' name='Age' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+      <datasources>
+        <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+      <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]'>
+        <groupfilter function='level-members' level='[Gender]' user:ui-action-filter='[Action1_4783DBD3606B437085CC9F1324234456]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 2 (generated)' name='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Emergancy Department' type='sheet' worksheet='Age' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Emergancy Department' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_350A6296003C43B3B574115A16503C54]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Emergancy Department' type='sheet' worksheet='% 2h' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Emergancy Department' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='% 2h'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_465981857874632706]' derivation='Count' name='[cnt:Calculation_465981857874632706:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_465981857874632706]' derivation='None' name='[none:Calculation_465981857874632706:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_465981857874632706]' derivation='Count' name='[pcto:cnt:Calculation_465981857874632706:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_465981857874632706:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1glkvn20q1wc6u13z4z5517lnyug].[cnt:Calculation_465981857874632706:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1glkvn20q1wc6u13z4z5517lnyug].[pcto:cnt:Calculation_465981857874632706:qk:3]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]'>
+            <groupfilter function='member' level='[Calculation_45598979323105280]' member='&quot; 71 - 80&quot;' user:ui-action-filter='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ff9d9a' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#f9f3ef' />
+            <format attr='background-color' value='#f9f3ef' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#c4675f' />
+            <format attr='text-align' scope='rows' value='left' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='total' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#c4675f' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#c4675f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_465981857874632706:nk]</rows>
+        <cols>[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6A980606-7BD0-4426-B54C-9D46035E9D2D}' />
+    </worksheet>
+    <worksheet name='Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#e15759' fontname='Tableau Regular'>Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Hospital Emergency Data1' datatype='integer' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Hospital Emergency Data1' datatype='table' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_45598979323105280]' derivation='Attribute' name='[attr:Calculation_45598979323105280:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_45598979323105280]' derivation='None' name='[none:Calculation_45598979323105280:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_45598979323105280]' derivation='Count' name='[pcto:cnt:Calculation_45598979323105280:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_45598979323105280:nk]' />
+              <wedge-size column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' />
+              <tooltip column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[pcto:cnt:Calculation_45598979323105280:qk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[pcto:cnt:Calculation_45598979323105280:qk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[attr:Calculation_45598979323105280:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age:&#9;</run>
+                <run bold='true' fontcolor='#ff0000'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_45598979323105280:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Age:&#9;&lt;CNT(Age Class)&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.6591712236404419' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{76BFDDA7-2059-4049-B36A-9D7F85D9E59C}' />
+    </worksheet>
+    <worksheet name='Age (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#e15759' fontname='Tableau Regular'>Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_45598979323105280]' derivation='None' name='[none:Calculation_45598979323105280:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_45598979323105280]' derivation='Count' name='[pcto:cnt:Calculation_45598979323105280:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_45598979323105280:nk]' />
+              <wedge-size column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[pcto:cnt:Calculation_45598979323105280:qk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[pcto:cnt:Calculation_45598979323105280:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Age:&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AD0C038C-000D-47EC-A1E1-3304D9A9DFC7}' />
+    </worksheet>
+    <worksheet name='Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Tableau Regular'>Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Hospital Emergency Data1' datatype='integer' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Hospital Emergency Data1' datatype='table' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]'>
+            <groupfilter function='member' level='[Calculation_45598979323105280]' member='&quot; 71 - 80&quot;' user:ui-action-filter='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Gender:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Total Visits:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5492265224456787' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0242DAB6-EA9D-4A17-A472-C6ED3BCE58B3}' />
+    </worksheet>
+    <worksheet name='Gender (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Tableau Regular'>Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Hospital Emergency Data1' datatype='integer' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Hospital Emergency Data1' datatype='table' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]'>
+            <groupfilter function='member' level='[Calculation_45598979323105280]' member='&quot;0 - 10&quot;' user:ui-action-filter='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='2147483647' minor-origin='0' minor-show='false' minor-spacing='2147483647' scope='rows' type='space' />
+            <encoding attr='space' class='1' domain-expand='false' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Gender:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Total Visits:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8350828886032104' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Gender:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Total Visits:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[pcto:cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.8176796436309814' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Gender:&#9;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% Total Visits:&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk] + [federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{31D7D5B2-2CAD-4EE5-B41B-9CD9447CE1F5}' />
+    </worksheet>
+    <worksheet name='Total Visits'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Tableau Regular'>Total Visits</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Hospital Emergency Data1' datatype='integer' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Hospital Emergency Data1' datatype='table' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]'>
+            <groupfilter function='member' level='[Calculation_45598979323105280]' member='&quot; 71 - 80&quot;' user:ui-action-filter='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#e15759' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#e15759' />
+            <format attr='font-size' value='15' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Visits:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8903CDA0-818E-4644-9690-D43AB30CE171}' />
+    </worksheet>
+    <worksheet name='Visits over time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Tableau Regular'>Visits </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Hospital Emergency Data1' datatype='integer' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Hospital Emergency Data1' datatype='table' name='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]'>
+            <groupfilter function='member' level='[Calculation_45598979323105280]' member='&quot; 71 - 80&quot;' user:ui-action-filter='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='title' class='0' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[tmn:Date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' num-steps='65' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' />
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Month of Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1glkvn20q1wc6u13z4z5517lnyug].[tmn:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Visits:&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]</rows>
+        <cols>[federated.1glkvn20q1wc6u13z4z5517lnyug].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{2549936D-66F8-41E2-930A-1A12401B9FC1}' />
+    </worksheet>
+    <worksheet name='Waiting time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#f17b79' fontname='Tableau Regular'>Avarge Waiting Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital Emergency Data (hospital_emergency_artificial_data)' name='federated.1glkvn20q1wc6u13z4z5517lnyug' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1glkvn20q1wc6u13z4z5517lnyug'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Age Class' datatype='string' name='[Calculation_45598979323105280]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &lt;=10 Then &apos;0 - 10&apos; &#10;ELSEIF [Age]&gt; 10 AND [Age] &lt;= 20 then &apos; 11 - 20&apos;&#10;ELSEIF [Age]&gt; 20 AND [Age] &lt;= 30 then &apos; 21 - 30&apos;&#10;ELSEIF [Age]&gt; 30 AND [Age] &lt;= 40 then &apos; 31 - 40&apos;&#10;ELSEIF [Age]&gt; 40 AND [Age] &lt;= 50 then &apos; 41 - 50&apos;&#10;ELSEIF [Age]&gt; 50 AND [Age] &lt;= 60 then &apos; 51 - 60&apos;&#10;ELSEIF [Age]&gt; 60 AND [Age] &lt;= 70 then &apos; 61 - 70&apos;&#10;ELSEIF [Age]&gt; 70 AND [Age] &lt;= 80 then &apos; 71 - 80&apos;&#10;ELSEIF [Age]&gt; 80 AND [Age] &lt;= 90 then &apos; 81 - 90&apos;&#10;ELSEIF [Age]&gt; 90 AND [Age] &lt;= 100 then &apos; 91 - 100&apos; END' />
+            </column>
+            <column caption='less/more 2h' datatype='string' name='[Calculation_465981857874632706]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_572238660397899776]&lt;=120 then &apos;less&apos; ELSE &apos;more&apos; END' />
+              <aliases>
+                <alias key='&quot;less&quot;' value='less than 2h' />
+                <alias key='&quot;more&quot;' value='more than 2h' />
+              </aliases>
+            </column>
+            <column caption='Waiting Time' datatype='integer' datatype-customized='true' name='[Calculation_572238660397899776]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;, [Reception Time],[Enter Time])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Enter Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Reception Time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_572238660397899776]' derivation='Avg' name='[avg:Calculation_572238660397899776:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]'>
+            <groupfilter function='member' level='[Calculation_45598979323105280]' member='&quot; 71 - 80&quot;' user:ui-action-filter='[Action2_C2A8C2C61E5445408D46AF70CBB9AD6A]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]'>
+            <groupfilter function='level-members' level='[Calculation_465981857874632706]' user:ui-action-filter='[Action3_350A6296003C43B3B574115A16503C54]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Gender)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (Age Class)]</column>
+            <column>[federated.1glkvn20q1wc6u13z4z5517lnyug].[Action (less/more 2h)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' field-type='quantitative' minor-origin='0.0' minor-show='false' minor-spacing='1.0' scope='rows' type='space' />
+            <format attr='tick-color' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' value='#ffffff' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='stroke-color' value='#b4b4b4' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='title' class='0' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' scope='rows' value='(Minutes)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='color' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='omit-on-special' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' value='true' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-color' scope='rows' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' />
+              <lod column='[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#555555' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff9d9a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1glkvn20q1wc6u13z4z5517lnyug].[avg:Calculation_572238660397899776:qk]</rows>
+        <cols>[federated.1glkvn20q1wc6u13z4z5517lnyug].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{2D3D259F-E4C5-478D-AA91-9C00B3B9E9ED}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Emergancy Department'>
+      <style />
+      <size maxheight='860' maxwidth='1250' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97930' id='35' param='horz' type-v2='layout-flow' w='98714' x='643' y='1035'>
+            <zone h='97930' id='18' type-v2='layout-basic' w='98714' x='643' y='1035'>
+              <zone h='89006' id='13' param='horz' type-v2='layout-flow' w='98714' x='643' y='9959'>
+                <zone h='89006' id='11' type-v2='layout-basic' w='98714' x='643' y='9959'>
+                  <zone h='44321' id='3' param='vert' type-v2='layout-flow' w='30382' x='643' y='9959'>
+                    <zone h='44321' id='5' param='horz' type-v2='layout-flow' w='30382' x='643' y='9959'>
+                      <zone h='44321' id='6' param='vert' type-v2='layout-flow' w='30382' x='643' y='9959'>
+                        <zone fixed-size='159' h='21604' id='30' is-fixed='true' name='Total Visits' w='30382' x='643' y='9959'>
+                          <layout-cache type-h='cell' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='22717' id='15' name='% 2h' w='30382' x='643' y='31563'>
+                          <layout-cache cell-count-h='2' non-cell-size-h='55' type-h='cell' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='44321' id='8' name='Waiting time' w='68332' x='31025' y='9959'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='44685' id='9' param='horz' type-v2='layout-flow' w='98714' x='643' y='54280'>
+                    <zone fixed-size='443' h='44685' id='10' is-fixed='true' name='Visits over time' w='36254' x='643' y='54280'>
+                      <layout-cache minheight='198' minwidth='130' type-h='scalable' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='362' h='44685' id='27' is-fixed='true' name='Age' w='29743' x='36897' y='54280'>
+                      <layout-cache type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='44685' id='33' name='Gender' w='32717' x='66640' y='54280'>
+                      <layout-cache type-h='fixed' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='8924' id='16' type-v2='text' w='98714' x='643' y='1035'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#e15759' fontsize='20'>Emergency Department</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='40' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='8924' id='16' type-v2='text' w='98714' x='643' y='1035'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='20'>Emergency Department</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='177' h='21604' id='30' is-fixed='true' name='Total Visits' w='30382' x='643' y='9959'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44321' id='8' is-fixed='true' name='Waiting time' w='68332' x='31025' y='9959'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='22717' id='15' is-fixed='true' name='% 2h' w='30382' x='643' y='31563'>
+                  <layout-cache cell-count-h='2' non-cell-size-h='55' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44685' id='10' is-fixed='true' name='Visits over time' w='36254' x='643' y='54280'>
+                  <layout-cache minheight='198' minwidth='130' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44685' id='27' is-fixed='true' name='Age' w='29743' x='36897' y='54280'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44685' id='33' is-fixed='true' name='Gender' w='32717' x='66640' y='54280'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1070C438-021B-497E-80EB-2556BEEB7A1A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Visits'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BCC258F5-E54E-440B-9D73-1C8D86A96450}' />
+    </window>
+    <window class='worksheet' name='% 2h'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4798CD0F-B672-45D7-AC50-0AD08C3495E8}' />
+    </window>
+    <window class='worksheet' name='Visits over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1glkvn20q1wc6u13z4z5517lnyug].[__tableau_internal_object_id__].[cnt:Hospital Emergency Data_B24824BB59CE483FB78C68CA196F3692:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7C239F35-198D-4B5D-A35F-50409E5DC49C}' />
+    </window>
+    <window class='worksheet' name='Waiting time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{37A6C37F-0194-45D8-8DEF-CA6666700572}' />
+    </window>
+    <window class='worksheet' name='Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9244437C-D177-4809-860C-F33ACE215AD6}' />
+    </window>
+    <window class='worksheet' name='Gender (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5F13CA27-78C9-4D04-961C-62EC21AA614D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_45598979323105280:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{77DBBF4D-9CF5-4481-919B-94A3229B7D41}' />
+    </window>
+    <window class='worksheet' name='Age (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.1glkvn20q1wc6u13z4z5517lnyug].[none:Calculation_45598979323105280:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{5B1E88E3-1F58-4FFE-B404-DB4D99DA26A9}' />
+    </window>
+    <window class='dashboard' name='Emergancy Department'>
+      <viewpoints>
+        <viewpoint name='% 2h'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Visits'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Visits over time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Waiting time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D24C383F-3EEE-480D-A8F0-6B66BE75BB2D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Age' width='384'>
+      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
+      DIwePRpfffUVpJT47LPPMG7cOAwbNgxff/01DMPAmjVrMGrUKAwbNgzffPMNpJT4/PPPMW7c
+      OBx11FG4+OKLsW7dOpxxxhnIysrCgAED2lxhxBPnAIiIuvD444/D6/WiqKgI9913H4QQuOee
+      e/D73/8e55xzDmbMmIG1a9fCMAzccMMNGDduHG6//Xbk5uZi8ODBGDFiBH75y1/izjvvxDvv
+      vIOsrCyMHDkSAPD6669j6tSpGDRoEKSUuPfee3HKKack5H2xEpiIqAu6rqO6uhq5ubktW3y2
+      ZhgGvF4vcnIObsAeiURQX1+P7Ozsltt0XYfP50NOTk6b51YUBUIISClbtiJNBCYAIqI0xTkA
+      IqI0xQRARJSmmACIiNIUEwARUQ+tWbMGN954IwKBAABgz549uOuuu7B169ZOHyelxNy5czFz
+      5kzMnDkTS5cuhWEYWLBgAa6//no8/vjjLX2CEoHLQImIeiAYDOL555+HlBKRSASVlZV47rnn
+      AAC1tbWdPjYUCmH79u14/PHHAQAOhwOFhYXYunUr/vSnP2H+/Pn45JNPcO6558b9fQC8AiAi
+      6jYpJebNm4crr7wSWVlZAID8/Hz88Y9/xDHHHNPl4wOBAHw+H7Zt24aGhgbY7XasXbsW5513
+      HpxOJy6++GKsXr063m+jBRMAEVE3bd26FaWlpTj99NMhpWyp2O1oa8jPP/8c//rXv1BVVQUA
+      cLlc+MlPfoJ169bhvvvuw5tvvtmmLsDpdCZ0CIgJgIiom95++23U1NTgrrvuwueff44//elP
+      bfr9H8pms8HpdLZ0DrXb7bjiiitw3XXXYf78+XjvvfcwePDgln0GysvL2xSJxRvnAIiIumnW
+      rFkt/77ttttwxx13IBAIYP369di1axeklPB4PBg3bhwAHNbaubCwEO+++y7OPvtsrFixAscf
+      fzwmT56M3/zmNygoKMDzzz+PO+64I2Hvh5XARES98PXXX2PcuHGoqanBihUrWm7Pz8/Hj370
+      o3YfI6XEunXrsGbNGgwfPhz//d//DUVRsH37dixZsgQ/+MEPcOKJJyboHTABEBGlLc4BEBGl
+      KSYAIqI0xQRARJSmmACIiNIUEwARUZpiAiAiSlNMAEREaer/A2ZMHe6X5eBdAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
